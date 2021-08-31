@@ -1,5 +1,6 @@
 //masz podane 2 stringi, sprawdź czy jeden jest palindromem drugiego
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class cwiczenie4 {
@@ -15,14 +16,17 @@ public class cwiczenie4 {
 
     static void isPalindrome(String firstWord, String secondWord) {
 
-        int firstWordlength = firstWord.length();
-        int secondWordlength = secondWord.length();
+        String firstWordWithoutSpecialCharacters = firstWord.replaceAll("[^a-zA-Z0-9]", "").toLowerCase(Locale.ROOT);
+        String secondWordWithoutSpecialCharacters = secondWord.replaceAll("[^a-zA-Z0-9]", "").toLowerCase(Locale.ROOT);
+
+        int firstWordlength = firstWordWithoutSpecialCharacters.length();
+        int secondWordlength = secondWordWithoutSpecialCharacters.length();
 
         if (firstWordlength < secondWordlength || firstWordlength > secondWordlength) {
             System.out.println("to nie jest palindrom");
         }
         for (int i = 0; i < firstWordlength; i++) {
-            if (firstWord.charAt(i) == secondWord.charAt(firstWordlength - 1 - i)) {
+            if (firstWordWithoutSpecialCharacters.charAt(i) == secondWordWithoutSpecialCharacters.charAt(firstWordlength - 1 - i)) {
                 if(i == firstWordlength - 1) {
                     System.out.println("to jest palindrom");
                 }
