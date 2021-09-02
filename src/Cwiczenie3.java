@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class cwiczenie3 {
+public class Cwiczenie3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Podaj wyraz ciągu: ");

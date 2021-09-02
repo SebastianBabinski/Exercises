@@ -12,7 +12,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class cwiczenie6 {
+public class Cwiczenie6 {
 
     public static void main(String[] args) {
 
