@@ -16,7 +16,6 @@ public class Cwiczenie8 {
         }
 
     }
-
     static void isPrime(int number) {
         int counter = 0;
         for (int i = 1; i <= number; i++) {
