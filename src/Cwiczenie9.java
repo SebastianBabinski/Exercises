@@ -30,8 +30,6 @@ public class Cwiczenie9 {
             } else {
                 System.out.println("You guessed the number, congratulations!!!");
             }
-
         } while (randomNumber != playerNumber);
-
     }
 }
