@@ -14,7 +14,7 @@ public class Cwiczenie9 {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         int randomNumber = random.nextInt(100);
-        int playerNumber = 0;
+        int playerNumber;
         do {
             System.out.println("Please guess the number: ");
             while (!scanner.hasNextInt()) {
