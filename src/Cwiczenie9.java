@@ -17,12 +17,11 @@ public class Cwiczenie9 {
         int playerNumber = 0;
         do {
             System.out.println("Please guess the number: ");
-            try {
-                playerNumber = scanner.nextInt();
-            } catch (InputMismatchException e) {
-                System.err.println("Entered value is not an integer. Please enter correct value.");
-                numberGuesser();
+            while (!scanner.hasNextInt()) {
+                scanner.next();
+                System.err.println("Please enter a number.");
             }
+            playerNumber = scanner.nextInt();
 
             if (playerNumber < randomNumber) {
                 System.out.println("Your number is too low.");
