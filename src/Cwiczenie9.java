@@ -8,7 +8,6 @@ public class Cwiczenie9 {
 
     public static void main(String[] args) {
         numberGuesser();
-
     }
 
     static void numberGuesser() {
