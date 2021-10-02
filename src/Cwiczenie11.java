@@ -17,6 +17,7 @@ public class Cwiczenie11 {
         int counter = 0;
 
         System.out.println("Welcome to the guesser game. Think about a number and I will guess it in less than 10 moves.");
+        System.out.println("Say 'too much' if the number is too big, 'too low' if the number is to low and 'hit' if I guessed the number!");
 
         do {
             int guessedNumber = ((max - min) / 2) + min;
