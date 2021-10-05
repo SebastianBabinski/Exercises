@@ -1,14 +1,21 @@
-// check if number is prime number
+// check if numbers are prime from range X to Y
 
-public class Cwiczenie7 {
+import java.util.Scanner;
+
+public class PrimeNumberRange {
 
     public static void main(String[] args) {
-        isPrime(1);
-        isPrime(3);
-        isPrime(17);
-        isPrime(20);
-    }
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the start value: ");
+        int start = scanner.nextInt();
+        System.out.print("Enter the end value: ");
+        int end = scanner.nextInt();
 
+        for (int i = start; i <= end; i ++){
+            isPrime(i);
+        }
+
+    }
     static void isPrime(int number) {
         int counter = 0;
         for (int i = 1; i <= number; i++) {

@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Cwiczenie9 {
+public class NumberGuesser {
 
     public static void main(String[] args) {
         numberGuesser();

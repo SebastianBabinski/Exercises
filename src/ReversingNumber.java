@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Cwiczenie13 {
+public class ReversingNumber {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

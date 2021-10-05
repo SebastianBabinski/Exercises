@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Cwiczenie11 {
+public class NumberGuesserPart2 {
 
     public static void main(String[] args) {
         NumberGuesserPt2();
@@ -11,7 +11,7 @@ public class Cwiczenie11 {
 
     static void NumberGuesserPt2() {
         Scanner scanner = new Scanner(System.in);
-        String answer = null;
+        String answer = "";
         int min = 0;
         int max = 1000;
         int counter = 0;

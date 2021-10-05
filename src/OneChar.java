@@ -1,4 +1,4 @@
-public class Cwiczenie5 {
+public class OneChar {
 
     public static void main(String[] args) {
         test("pale", "ple");

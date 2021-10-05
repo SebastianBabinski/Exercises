@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Cwiczenie3 {
+public class Fibonnaci {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Podaj wyraz ciągu: ");

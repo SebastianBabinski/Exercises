@@ -1,4 +1,4 @@
-// RPG dice roller
+// RPG dice roll
 
 import java.sql.SQLOutput;
 import java.util.Random;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import static java.lang.Math.random;
 
-public class Cwiczenie12 {
+public class RPGDiceRoll {
 
     public static void main(String[] args) {
         System.out.println("Enter the the throw according to code 'xDy+z' or 'xDy-z'.");

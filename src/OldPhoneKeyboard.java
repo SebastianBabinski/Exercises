@@ -9,7 +9,7 @@
 
 import java.util.*;
 
-public class Cwiczenie {
+public class OldPhoneKeyboard {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

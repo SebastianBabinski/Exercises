@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Cwiczenie10 {
+public class Lottery {
 
     public static void main(String[] args) {
         LottoGuesser();
