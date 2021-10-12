@@ -18,7 +18,7 @@ public class RemovingDuplicatesFromArray {
 
         System.out.println("number with duplicates: " + numbers);
 
-        // LinkedHashSet dont allow to inster duplicates
+        // LinkedHashSet dont allow to insert duplicates
         Set<Integer> numbersWithoutDuplicates = new LinkedHashSet<Integer>(numbers);
 
         // clearing and adding the numbers to ArrayList
