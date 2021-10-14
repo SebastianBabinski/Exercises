@@ -3,12 +3,11 @@ import java.util.Arrays;
 public class isAnagram {
 
     public static void main(String[] args) {
-        isAnagram("kot", "kto");
-        isAnagram("test", "best");
-
+        isAnagramMethod("kot", "kto");
+        isAnagramMethod("test", "best");
     }
 
-    static void isAnagram(String word, String anagram) {
+    static void isAnagramMethod(String word, String anagram) {
         char[] wordArray = word.toCharArray();
         char[] anagramArray = anagram.toCharArray();
 
