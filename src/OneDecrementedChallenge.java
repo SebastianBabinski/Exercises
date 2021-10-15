@@ -17,7 +17,6 @@ public class OneDecrementedChallenge {
 
     public static void main(String[] args) {
         OneDecremented("5655984");
-
     }
 
     static int OneDecremented(String number) {
