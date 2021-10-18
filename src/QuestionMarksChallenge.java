@@ -5,6 +5,49 @@
 public class QuestionMarksChallenge {
 
     public static void main(String[] args) {
+        isQuestionMarks("acc?7??sss?3rr1??????5");
     }
 
+    static void isQuestionMarks(String str) {
+        char[] chars = str.toCharArray();
+        boolean isNumberOne = false;
+        boolean isNumberTwo = false;
+        boolean valid = false;
+        int sum = 0;
+        int questionMarks = 0;
+
+        for (int i = 0; i < chars.length; i++) {
+            if (Character.getNumericValue(chars[i]) > 0 && Character.getNumericValue(chars[i]) < 9) {
+                sum = sum + Character.getNumericValue(chars[i]);
+
+                if (!isNumberOne) {
+                    isNumberOne = true;
+                } else {
+                    isNumberTwo = true;
+                }
+            }
+
+            if (chars[i] == '?' && (isNumberOne || isNumberTwo)) {
+                questionMarks++;
+            }
+
+            if (isNumberOne && isNumberTwo) {
+                if(sum == 10 && questionMarks == 3) {
+                    valid = true;
+                } else if (sum == 10 && questionMarks != 3) {
+                    valid = false;
+                    isNumberOne = false;
+                    isNumberTwo = false;
+                    questionMarks = 0;
+                    sum = 0;
+                }
+            }
+        }
+
+        if(valid) {
+            System.out.println("true " + sum + " " + questionMarks);
+        } else {
+            System.out.println("false "+ sum + " " + questionMarks);
+        }
+    }
 }
