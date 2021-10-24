@@ -1,7 +1,7 @@
 public class Factorial {
 
     public static void main(String[] args) {
-        factorialNumber(5);
+        System.out.println(factorialNumber(5));
         factorialNumberIteration(5);
     }
 
