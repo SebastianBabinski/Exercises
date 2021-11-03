@@ -2,7 +2,7 @@ import java.util.*;
 
 import static java.util.Arrays.asList;
 
-public class findDuplicatesChallenge {
+public class FindDuplicatesChallenge {
 
 //    public static void main(String[] args) {
 //        System.out.println(findDuplicates(asList(-1, 1, 3, 2, 2, 2, 5, 6, -1, 3, 6), 2));
