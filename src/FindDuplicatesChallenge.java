@@ -25,9 +25,9 @@ import static java.util.Arrays.asList;
 
 public class FindDuplicatesChallenge {
 
-//    public static void main(String[] args) {
-//        System.out.println(findDuplicates(asList(-1, 1, 3, 2, 2, 2, 5, 6, -1, 3, 6), 2));
-//    }
+    public static void main(String[] args) {
+        System.out.println(findDuplicates(asList(-1, 1, 3, 2, 2, 2, 5, 6, -1, 3, 6), 2));
+    }
 
     public static List<Integer> findDuplicates(List<Integer> integers, int numberOfDuplicates) {
         List<Integer> duplicates = new LinkedList<>();
